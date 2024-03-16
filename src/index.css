@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "../node_modules/@fontsource/nunito-sans/index.css";
+.mainHeader__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+.mainHeader__container__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader__container__main__logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainHeader__container__main__logo__img {
+  width: 100%;
+}
+.mainHeader__container__main__navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader__container__main__navContainer__nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader__container__main__navContainer__nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.mainHeader__container__main__navContainer__nav__list__item {
+  margin: 0 1rem;
+}
+.mainHeader__container__main__navContainer__nav__list__item__link {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.mainHeader__container__main__navContainer__nav__list__item__link.active, .mainHeader__container__main__navContainer__nav__list__item__link:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ff0000;
+  color: #0044ff;
+}
+.mainHeader__container__secondary {
+  padding-left: 10px;
+  border-left: 0.5px solid #ccc;
+}
+.mainHeader__container__secondary__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader__container__secondary__search__input {
+  padding: 0.5rem;
+  border: none;
+  margin-right: 1rem;
+}
+.mainHeader__container__secondary__search__input::placeholder {
+  color: #ccc;
+}
+.mainHeader__container__secondary__search__input:focus {
+  outline: none;
+}
+.mainHeader__container__secondary__search__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #0044ff;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.mainHeader__container__secondary__search__button:hover {
+  color: #ff0000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/*# sourceMappingURL=index.css.map */
