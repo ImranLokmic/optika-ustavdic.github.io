@@ -30,30 +30,39 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className="mainHeader__container__main__navContainer__nav__list__item">
+                    <NavLink
+                        to="/radnje"
+                        className="mainHeader__container__main__navContainer__nav__list__item__link"
+                        activeClassName="active"
+                    >
+                        Radnje
+                    </NavLink>
+                </li>
+                <li className="mainHeader__container__main__navContainer__nav__list__item">
+                    <NavLink
+                        to="/ponuda"
+                        className="mainHeader__container__main__navContainer__nav__list__item__link"
+                        activeClassName="active"
+                    >
+                        Ponuda
+                    </NavLink>
+                </li>
+                <li className="mainHeader__container__main__navContainer__nav__list__item">
+                    <NavLink
+                        to="/asistent"
+                        className="mainHeader__container__main__navContainer__nav__list__item__link"
+                        activeClassName="active"
+                    >
+                        Asistent
+                    </NavLink>
+                </li>
+                <li className="mainHeader__container__main__navContainer__nav__list__item">
                   <NavLink
-                    to="/about"
+                    to="/onama"
                     className="mainHeader__container__main__navContainer__nav__list__item__link"
                     activeClassName="active"
                   >
                     O nama
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/services"
-                    className="mainHeader__container__main__navContainer__nav__list__item__link"
-                    activeClassName="active"
-                  >
-                    Usluge
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/contact"
-                    className="mainHeader__container__main__navContainer__nav__list__item__link"
-                    activeClassName="active"
-                  >
-                    Kontakt
                   </NavLink>
                 </li>
               </ul>
