@@ -20,6 +20,7 @@
 }
 .mainHeader__container__main__logo__img {
   width: 100%;
+  vertical-align: middle;
 }
 .mainHeader__container__main__navContainer {
   display: flex;
@@ -87,7 +88,108 @@
 .mainHeader__container__secondary__search__button:hover {
   color: #ff0000;
 }
+.mainHeader__mobile {
+  display: none;
+}
+.mainHeader__mobile__main {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+.mainHeader__mobile__main__logo {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainHeader__mobile__main__logo__img {
+  width: 100%;
+  vertical-align: middle;
+}
+.mainHeader__mobile__main__container {
+  display: none;
+  grid-template-columns: 1fr;
+}
+.mainHeader__mobile__main__container__logo {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainHeader__mobile__main__container__logo__img {
+  width: 75px;
+  vertical-align: middle;
+}
+.mainHeader__mobile__main__container__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainHeader__mobile__main__container__search__input {
+  padding: 0.5rem;
+  border: none;
+  text-align: center;
+  margin-right: 1rem;
+}
+.mainHeader__mobile__main__container__search__input::placeholder {
+  color: #ccc;
+}
+.mainHeader__mobile__main__container__search__input:focus {
+  outline: none;
+}
+.mainHeader__mobile__main__container__search__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #0044ff;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.mainHeader__mobile__main__container__search__button:hover {
+  color: #ff0000;
+}
+.mainHeader__mobile__main__container__nav__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mainHeader__mobile__main__container__nav__list__item {
+  margin: 1rem 1rem;
+}
+.mainHeader__mobile__main__container__nav__list__item__link {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.mainHeader__mobile__main__container__nav__list__item__link.active, .mainHeader__mobile__main__container__nav__list__item__link:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ff0000;
+  color: #0044ff;
+}
 
+@media only screen and (max-width: 480px) {
+  .mainHeader__container {
+    display: none;
+  }
+  .mainHeader__mobile {
+    display: flex;
+  }
+}
 body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
