@@ -1,0 +1,133 @@
+// _footer.scss
+
+.mainFooter {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-primary;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    &__main {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      &__copyright {
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &__navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__nav {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            &__item {
+              margin: 0 1rem;
+              &__link {
+                text-decoration: none;
+                color: $color-white;
+                font-size: 14px;
+                font-weight: 500;
+                transition: color 0.3s;
+                &.active,
+                &:hover {
+                  padding-bottom: 10px;
+                  border-bottom: 3px solid $color-secondary;
+                }
+              }
+              &__button {
+                background: none;
+                border: none;
+                padding: 0;
+                outline: none;
+                text-decoration: none;
+                color: $color-white;
+                font-size: 14px;
+                font-weight: 500;
+                transition: color 0.3s;
+                &.active,
+                &:hover {
+                  padding-bottom: 10px;
+                  border-bottom: 3px solid $color-secondary;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__mobile {
+        display: none;
+        &__backToTop {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &__button {
+            background: none;
+            border: none;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            color: $color-white;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+            &.active,
+            &:hover {
+              padding-bottom: 10px;
+              border-bottom: 3px solid $color-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+
+// Mobile breakpoint - 320px - 480px
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainFooter {
+    &__container {
+      &__main {
+        &__navContainer {
+          display: none;
+        }
+        &__mobile {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+// Tablet breakpoint - 481px - 768px
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .mainFooter {
+    &__container {
+      &__main {
+        &__navContainer {
+          display: none;
+        }
+        &__mobile {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+// Desktop breakpoint - 769px - 1024px

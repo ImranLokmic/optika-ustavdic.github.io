@@ -1,10 +1,10 @@
 import React from 'react';
+import Hero from '../elements/Hero';
 
 const HomePage = () => {
     return (
-        <div>
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the content of the home page.</p>
+        <div className="homepage">
+            <Hero />
         </div>
     );
 };

@@ -4,10 +4,23 @@
 // Fonts
 @import "../node_modules/@fontsource/nunito-sans/index.css";
 
+// Components
 @import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/home";
+
 
 // General styles
+
+html, body {
+   overflow: auto;
+}
+
 body {
+   height: 100%;
+   width: 100%;
    font-family: 'Nunito Sans', sans-serif;
    font-size: 16px;
    line-height: 1.6;

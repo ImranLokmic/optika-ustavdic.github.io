@@ -1,15 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { headerLinks, logo } from "../content/HeaderContent";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
 
   const toggleMenu = () => {
     showHamburgerMenu();
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const toggleSearchBar = () => {
+    showSearchBar();
+    setIsSearchBarOpen(!isSearchBarOpen);
+  }
 
   return (
     <header className="mainHeader">
@@ -18,7 +25,7 @@ function Header() {
           <div className="mainHeader__container__main__logo">
             <NavLink to="/">
               <img
-                src={process.env.PUBLIC_URL + "/logo.png"}
+                src={logo}
                 alt="Logo"
                 className="mainHeader__container__main__logo__img"
               />
@@ -27,66 +34,23 @@ function Header() {
           <div className="mainHeader__container__main__navContainer">
             <nav className="mainHeader__container__main__navContainer__nav">
               <ul className="mainHeader__container__main__navContainer__nav__list">
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__container__main__navContainer__nav__list__item__link active"
-                        : "mainHeader__container__main__navContainer__nav__list__item__link"
-                    }
+                {headerLinks.map((link, index) => (
+                  <li
+                    key={index}
+                    className="mainHeader__container__main__navContainer__nav__list__item"
                   >
-                    Početna
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/radnje"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__container__main__navContainer__nav__list__item__link active"
-                        : "mainHeader__container__main__navContainer__nav__list__item__link"
-                    }
-                  >
-                    Radnje
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/ponuda"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__container__main__navContainer__nav__list__item__link active"
-                        : "mainHeader__container__main__navContainer__nav__list__item__link"
-                    }
-                  >
-                    Ponuda
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/asistent"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__container__main__navContainer__nav__list__item__link active"
-                        : "mainHeader__container__main__navContainer__nav__list__item__link"
-                    }
-                  >
-                    Asistent
-                  </NavLink>
-                </li>
-                <li className="mainHeader__container__main__navContainer__nav__list__item">
-                  <NavLink
-                    to="/onama"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__container__main__navContainer__nav__list__item__link active"
-                        : "mainHeader__container__main__navContainer__nav__list__item__link"
-                    }
-                  >
-                    O nama
-                  </NavLink>
-                </li>
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "mainHeader__container__main__navContainer__nav__list__item__link active"
+                          : "mainHeader__container__main__navContainer__nav__list__item__link"
+                      }
+                    >
+                      {link.name}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -102,23 +66,28 @@ function Header() {
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
+          <div className="mainHeader__container__secondary__responsive">
+            <button className="mainHeader__container__secondary__responsive__button" onClick={toggleSearchBar}>
+              <FontAwesomeIcon icon={isSearchBarOpen ? faTimes : faSearch} />
+            </button>
+          </div>
         </div>
       </div>
       <div className="mainHeader__mobile">
         <div className="mainHeader__mobile__main">
           <div className="mainHeader__mobile__main__hamburger">
-            <a
-              href="#"
+            <button
               className="mainHeader__mobile__main__hamburger__link"
               onClick={toggleMenu}
+              style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
-            </a>
+            </button>
           </div>
           <div className="mainHeader__mobile__main__logo">
             <NavLink to="/">
               <img
-                src={process.env.PUBLIC_URL + "/logo.png"}
+                src={logo}
                 alt="Logo"
                 className="mainHeader__mobile__main__logo__img"
               />
@@ -128,7 +97,7 @@ function Header() {
             <div className="mainHeader__mobile__main__container__logo">
               <NavLink to="/">
                 <img
-                  src={process.env.PUBLIC_URL + "/logo.png"}
+                  src={logo}
                   alt="Logo"
                   className="mainHeader__mobile__main__container__logo__img"
                 />
@@ -146,66 +115,23 @@ function Header() {
             </div>
             <nav className="mainHeader__mobile__main__container__nav">
               <ul className="mainHeader__mobile__main__container__nav__list">
-                <li className="mainHeader__mobile__main__container__nav__list__item">
-                  <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__mobile__main__container__nav__list__item__link active"
-                        : "mainHeader__mobile__main__container__nav__list__item__link"
-                    }
+                {headerLinks.map((link, index) => (
+                  <li
+                    key={index}
+                    className="mainHeader__mobile__main__container__nav__list__item"
                   >
-                    Početna
-                  </NavLink>
-                </li>
-                <li className="mainHeader__mobile__main__container__nav__list__item">
-                  <NavLink
-                    to="/radnje"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__mobile__main__container__nav__list__item__link active"
-                        : "mainHeader__mobile__main__container__nav__list__item__link"
-                    }
-                  >
-                    Radnje
-                  </NavLink>
-                </li>
-                <li className="mainHeader__mobile__main__container__nav__list__item">
-                  <NavLink
-                    to="/ponuda"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__mobile__main__container__nav__list__item__link active"
-                        : "mainHeader__mobile__main__container__nav__list__item__link"
-                    }
-                  >
-                    Ponuda
-                  </NavLink>
-                </li>
-                <li className="mainHeader__mobile__main__container__nav__list__item">
-                  <NavLink
-                    to="/asistent"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__mobile__main__container__nav__list__item__link active"
-                        : "mainHeader__mobile__main__container__nav__list__item__link"
-                    }
-                  >
-                    Asistent
-                  </NavLink>
-                </li>
-                <li className="mainHeader__mobile__main__container__nav__list__item">
-                  <NavLink
-                    to="/onama"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "mainHeader__mobile__main__container__nav__list__item__link active"
-                        : "mainHeader__mobile__main__container__nav__list__item__link"
-                    }
-                  >
-                    O nama
-                  </NavLink>
-                </li>
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "mainHeader__mobile__main__container__nav__list__item__link active"
+                          : "mainHeader__mobile__main__container__nav__list__item__link"
+                      }
+                    >
+                      {link.name}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
@@ -217,10 +143,6 @@ function Header() {
 
 function showHamburgerMenu() {
   const main = document.querySelector(".mainHeader__mobile__main");
-
-  const hamburgerButton = document.querySelector(
-    ".mainHeader__mobile__main__hamburger__link"
-  );
 
   const hamburgerDiv = document.querySelector(
     ".mainHeader__mobile__main__hamburger"
@@ -252,6 +174,23 @@ function showHamburgerMenu() {
   hamburgerDiv.style.gridArea = "1 / 2 / 2 / 3";
   // Change template columns
   main.style.gridTemplateColumns = "10fr 1fr";
+}
+
+function showSearchBar() {
+  const searchButton = document.querySelector(".mainHeader__container__secondary__responsive__button");
+  const navBar = document.querySelector(".mainHeader__container__main__navContainer");
+  const searchBar = document.querySelector(".mainHeader__container__secondary__search");
+
+  if (searchBar.style.display === "flex") {
+    searchBar.style = "";
+    navBar.style = "";
+
+    return;
+  }
+
+  searchBar.style.display = "flex";
+  navBar.style.display = "none";
 
 }
+
 export default Header;

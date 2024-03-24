@@ -1,0 +1,84 @@
+.homepage {
+  &__hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    &__container {
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      &__subtext1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      &__title {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: 700;
+        .titleName1{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            text-transform: uppercase;
+            color: $color-primary;
+            background-color: $color-white;
+        }
+        .titleName2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            color: $color-white;
+            background-color: $color-secondary
+        }
+      }
+      &__dash{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__line {
+          width: 10%;
+          height: 2px;
+          background-color: $color-white;
+          margin: 0 1rem;
+        }
+      }
+      &__subtext2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      &__buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+        &__button {
+          background-color: $color-primary;
+          color: $color-white;
+          padding: 1rem 3rem;
+          border: none;
+          border-radius: 0.3rem;
+          font-size: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        &__button.secondary {
+          background-color: $color-secondary;
+        }
+      }
+    }
+  }
+}
