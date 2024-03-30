@@ -7,6 +7,6 @@ export const headerLinks = [
     { name: "O nama", path: "/onama" },
   ];
   
-export const logo = process.env.PUBLIC_URL + "logo.png";
+export const logo = process.env.PUBLIC_URL + "/logo.png";
   
 export const searchPlaceholder = "Pretraži";
