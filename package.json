@@ -1,7 +1,7 @@
 {
   "name": "optika-ustavdic",
   "version": "0.1.0",
-  "homepage": "https://imranlokmic.github.io/optika-ustavdic.github.io/",
+  "homepage": "https://imranlokmic.github.io/",
   "private": true,
   "dependencies": {
     "@fontsource/nunito-sans": "^5.0.12",
