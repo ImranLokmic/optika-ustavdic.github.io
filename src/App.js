@@ -11,7 +11,7 @@ import AboutPage from "./pages/AboutPage";
 function App() {
 
   return (
-    <Router>
+    <Router basename="/optika-ustavdic.github.io">
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
