@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/optika-ustavdic.github.io/static/css/main.779e1509.css",
-    "main.js": "/optika-ustavdic.github.io/static/js/main.dc73561e.js",
-    "static/media/nunito-sans-latin-ext-400-normal.woff": "/optika-ustavdic.github.io/static/media/nunito-sans-latin-ext-400-normal.3616c6e04cfeaa7e3068.woff",
-    "static/media/nunito-sans-latin-400-normal.woff": "/optika-ustavdic.github.io/static/media/nunito-sans-latin-400-normal.89779fe8618f67780344.woff",
-    "static/media/nunito-sans-latin-400-normal.woff2": "/optika-ustavdic.github.io/static/media/nunito-sans-latin-400-normal.df62b85d68225de7d768.woff2",
-    "static/media/nunito-sans-latin-ext-400-normal.woff2": "/optika-ustavdic.github.io/static/media/nunito-sans-latin-ext-400-normal.60b956cf3b96cdde76dc.woff2",
-    "static/media/nunito-sans-cyrillic-ext-400-normal.woff": "/optika-ustavdic.github.io/static/media/nunito-sans-cyrillic-ext-400-normal.7164dc7abfc2d7a4d2f1.woff",
-    "static/media/nunito-sans-cyrillic-400-normal.woff": "/optika-ustavdic.github.io/static/media/nunito-sans-cyrillic-400-normal.8cef671e46a5ae5ee031.woff",
-    "static/media/nunito-sans-cyrillic-ext-400-normal.woff2": "/optika-ustavdic.github.io/static/media/nunito-sans-cyrillic-ext-400-normal.c1e68cdbf8295394108d.woff2",
-    "static/media/nunito-sans-vietnamese-400-normal.woff": "/optika-ustavdic.github.io/static/media/nunito-sans-vietnamese-400-normal.2027c52ff83d2ccd117d.woff",
-    "static/media/nunito-sans-cyrillic-400-normal.woff2": "/optika-ustavdic.github.io/static/media/nunito-sans-cyrillic-400-normal.f8b450dc961b6de9d239.woff2",
-    "static/media/nunito-sans-vietnamese-400-normal.woff2": "/optika-ustavdic.github.io/static/media/nunito-sans-vietnamese-400-normal.170e94e9f869d539e5fd.woff2",
-    "index.html": "/optika-ustavdic.github.io/index.html",
-    "main.779e1509.css.map": "/optika-ustavdic.github.io/static/css/main.779e1509.css.map",
-    "main.dc73561e.js.map": "/optika-ustavdic.github.io/static/js/main.dc73561e.js.map"
+    "main.css": "/static/css/main.4f784656.css",
+    "main.js": "/static/js/main.50751c1c.js",
+    "static/media/nunito-sans-latin-ext-400-normal.woff": "/static/media/nunito-sans-latin-ext-400-normal.3616c6e04cfeaa7e3068.woff",
+    "static/media/nunito-sans-latin-400-normal.woff": "/static/media/nunito-sans-latin-400-normal.89779fe8618f67780344.woff",
+    "static/media/nunito-sans-latin-400-normal.woff2": "/static/media/nunito-sans-latin-400-normal.df62b85d68225de7d768.woff2",
+    "static/media/nunito-sans-latin-ext-400-normal.woff2": "/static/media/nunito-sans-latin-ext-400-normal.60b956cf3b96cdde76dc.woff2",
+    "static/media/nunito-sans-cyrillic-ext-400-normal.woff": "/static/media/nunito-sans-cyrillic-ext-400-normal.7164dc7abfc2d7a4d2f1.woff",
+    "static/media/nunito-sans-cyrillic-400-normal.woff": "/static/media/nunito-sans-cyrillic-400-normal.8cef671e46a5ae5ee031.woff",
+    "static/media/nunito-sans-cyrillic-ext-400-normal.woff2": "/static/media/nunito-sans-cyrillic-ext-400-normal.c1e68cdbf8295394108d.woff2",
+    "static/media/nunito-sans-vietnamese-400-normal.woff": "/static/media/nunito-sans-vietnamese-400-normal.2027c52ff83d2ccd117d.woff",
+    "static/media/nunito-sans-cyrillic-400-normal.woff2": "/static/media/nunito-sans-cyrillic-400-normal.f8b450dc961b6de9d239.woff2",
+    "static/media/nunito-sans-vietnamese-400-normal.woff2": "/static/media/nunito-sans-vietnamese-400-normal.170e94e9f869d539e5fd.woff2",
+    "index.html": "/index.html",
+    "main.4f784656.css.map": "/static/css/main.4f784656.css.map",
+    "main.50751c1c.js.map": "/static/js/main.50751c1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.779e1509.css",
-    "static/js/main.dc73561e.js"
+    "static/css/main.4f784656.css",
+    "static/js/main.50751c1c.js"
   ]
 }
